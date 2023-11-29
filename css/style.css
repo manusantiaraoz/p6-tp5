@@ -1,0 +1,39 @@
+/* dejar el main mas grande */
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    flex-grow: 1;
+}
+/* aqui termina */
+
+h2{
+    font-family: 'Courier New';
+color: red;
+}
+
+.btn{
+    margin-top: 10px;
+    margin-left: 20px;
+  width: 175px;
+  height: 35px;
+}
+.progress-bar{
+    width: 0%;
+    
+}
+
+.parametros{
+    position: relative;
+    padding-left: 24%;
+    margin-top: 20%;
+}
+.contenedorBarra{
+    position: relative;
+    left: 80px;
+    margin-top: 2%;
+
+}

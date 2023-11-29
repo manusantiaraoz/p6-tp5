@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Practica DOM</title>
+  </head>
+
+  <!-- data-bs-theme=dark es para poner el tema oscuro de boostrap -->
+  <body data-bs-theme="dark" >
+    <main >
+      
+      <div class="d-flex flex-nowrap parametros">
+        
+        <form id="form">
+          <h2>temporizador</h2>
+          <input class="form-control form-control-sm" type="number" placeholder="hs" min="0" max="60" maxlength="2" minlength="1" id="hs">
+          <input class="form-control form-control-sm" type="number" placeholder="minutos" min="0" max="60" maxlength="2" minlength="1" id="min">
+          <input class="form-control form-control-sm" type="number" placeholder="segundos" min="0" max="60" maxlength="2" minlength="1" id="seg">
+          <button type="submit" class="btn btn-warning btn-xs" id="startStopButton">iniciar</button>
+        </form>
+      </div>
+        <div class="w-100">
+          <div class="w-50 contenedorBarra">
+
+            <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" ></div>
+          </div>
+        </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
